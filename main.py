@@ -6,7 +6,7 @@ from typing import Annotated
 import sqlite3
 
 con = sqlite3.connect("db.db", check_same_thread=False)
-cur = con.cursor()
+cur = con.cursor()  # DB에서의 커서라는 개념이 있는데 insert/select 시 사용
 
 app = FastAPI()
 
@@ -26,7 +26,7 @@ async def create_item(
                 INSERT INTO items (title,image,price,description,place,insertAt)
                 VALUES ("{title}","{image_bytes.hex()}",{price},"{description}","{place}","{insertAt}")
                 """
-    )
+    )  # f""" """ -> JS의 변수 소환법인 `${}`과 동일
     con.commit()
     return "200"
 
@@ -53,6 +53,12 @@ async def get_image(item_id):
     ).fetchone()[0]
 
     return Response(content=bytes.fromhex(image_bytes))
+
+
+@app.post("/signup")
+def signup(id: Annotated[str, Form()], password: Annotated[str, Form()]):
+    print(id, password)
+    return "200"
 
 
 app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
