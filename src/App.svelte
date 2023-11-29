@@ -1,0 +1,19 @@
+<script>
+  import Login from "./pages/Login.svelte";
+  import Main from "./pages/Main.svelte";
+  import Signup from "./pages/Signup.svelte";
+  import Write from "./pages/Write.svelte";
+  import Router from "svelte-spa-router";
+  import Nfn from "./pages/Nfn.svelte";
+  import "./css/style.css";
+
+  const routes = {
+    "/": Main,
+    "/login": Login,
+    "/signup": Signup,
+    "/write": Write,
+    "*": Nfn,
+  };
+</script>
+
+<Router {routes} />

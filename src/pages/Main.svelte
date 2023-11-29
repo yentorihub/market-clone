@@ -1,0 +1,130 @@
+<script>
+  let hour = new Date().getHours();
+  let min = new Date().getMinutes();
+</script>
+
+<header>
+  <div class="info-bar">
+    <div class="info-bar__time">{hour}:{min}</div>
+    <div class="info-bar__icons">
+      <img src="assets/chart-bar.svg" alt="chart-bar" />
+      <img src="assets/wifi.svg" alt="wifi" />
+      <img src="assets/battery.svg" alt="battery" />
+    </div>
+  </div>
+  <div class="menu-bar">
+    <div class="menu-bar__location">
+      <div>역삼1동</div>
+      <div class="menu-bar__location-icon">
+        <img src="assets/arrow-down.svg" alt="arrow-down" />
+      </div>
+    </div>
+    <div class="menu-bar__icons">
+      <img src="assets/search.svg" alt="돋보기" />
+      <img src="assets/bars-3.svg" alt="bar" />
+      <img src="assets/alert.svg" alt="bell" />
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- <div class="items-list">
+      <div class="item-list__img">
+        <img src="assets/img.svg" alt="imgerror" />
+      </div>
+
+      <div class="item-list__info">
+        <div class="item-list__info-title">게이밍 PC 팝니다</div>
+        <div class="item-list__info-meta">역삼동 19초전</div>
+        <div class="item-list__info-price">100만원</div>
+      </div>
+    </div>
+
+    <div class="items-list">
+      <div class="item-list__img">
+        <img src="assets/img.svg" alt="imgerror" />
+      </div>
+      <div class="item-list__info">
+        <div class="item-list__info-title">게이밍 PC 팝니다</div>
+        <div class="item-list__info-meta">역삼동 19초전</div>
+        <div class="item-list__info-price">100만원</div>
+      </div>
+    </div>
+    <div class="items-list">
+      <div class="item-list__img">
+        <img src="assets/img.svg" alt="imgerror" />
+      </div>
+      <div class="item-list__info">
+        <div class="item-list__info-title">게이밍 PC 팝니다</div>
+        <div class="item-list__info-meta">역삼동 19초전</div>
+        <div class="item-list__info-price">100만원</div>
+      </div>
+    </div>
+    <div class="items-list">
+      <div class="item-list__img">
+        <img src="assets/img.svg" alt="imgerror" />
+      </div>
+      <div class="item-list__info">
+        <div class="item-list__info-title">게이밍 PC 팝니다</div>
+        <div class="item-list__info-meta">역삼동 19초전</div>
+        <div class="item-list__info-price">100만원</div>
+      </div>
+    </div>
+    <div class="items-list">
+      <div class="item-list__img">
+        <img src="assets/img.svg" alt="imgerror" />
+      </div>
+      <div class="item-list__info">
+        <div class="item-list__info-title">게이밍 PC 팝니다</div>
+        <div class="item-list__info-meta">역삼동 19초전</div>
+        <div class="item-list__info-price">100만원</div>
+      </div>
+    </div>
+    <div class="items-list">
+      <div class="item-list__img">
+        <img src="assets/img.svg" alt="imgerror" />
+      </div>
+      <div class="item-list__info">
+        <div class="item-list__info-title">게이밍 PC 팝니다</div>
+        <div class="item-list__info-meta">역삼동 19초전</div>
+        <div class="item-list__info-price">100만원</div>
+      </div>
+    </div> -->
+  <a class="write-btn" href="write.html">+ 글쓰기</a>
+</main>
+
+<footer>
+  <div class="footer-block">
+    <div class="footer-icons">
+      <div class="footer-icons__img">
+        <img src="assets/home.svg" alt="homeicon" />
+      </div>
+      <div>홈</div>
+    </div>
+    <div class="footer-icons">
+      <div class="footer-icons__img">
+        <img src="assets/doc.svg" alt="docicon" />
+      </div>
+      <div>동네생활</div>
+    </div>
+    <div class="footer-icons">
+      <div class="footer-icons__img">
+        <img src="assets/location.svg" alt="location" />
+      </div>
+      <div>내 근처</div>
+    </div>
+    <div class="footer-icons">
+      <div class="footer-icons__img">
+        <img src="assets/chat.svg" alt="chaticon" />
+      </div>
+      <div>채팅</div>
+    </div>
+    <div class="footer-icons">
+      <div class="footer-icons__img">
+        <img src="assets/user.svg" alt="usericon" />
+      </div>
+      <div>나의 당근</div>
+    </div>
+  </div>
+</footer>
+<div class="media-info-msg">화면 사이즈를 줄여주세요.</div>
