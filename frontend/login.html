@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="login-form" action="/signup" method="POST">
+      <div>
+        <label for="id">ID</label>
+        <input type="text" id="id" name="id" />
+      </div>
+      <div>
+        <label for="password">PW</label>
+        <input type="password" id="password" name="password" />
+      </div>
+      <div><button type="submit">로그인</button></div>
+      <div id="info"></div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
